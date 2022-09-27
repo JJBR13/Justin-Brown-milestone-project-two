@@ -61,6 +61,12 @@ btn:hover {
     border-radius: 10px;
 }
 
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .hide {
     visibility: hidden;
 }

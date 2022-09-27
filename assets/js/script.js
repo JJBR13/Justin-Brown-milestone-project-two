@@ -9,3 +9,8 @@ function startGame () {
     startButton.classList.add('hide');
     storyContainer.classList.remove('hide');
 }
+
+
+function narrations() {
+
+}
