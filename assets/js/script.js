@@ -12,15 +12,35 @@ function startGame () {
     optionButtons.classList.remove('hide');
 }
 
-/*
-function showNarrations(stories) {
-    narrationStoryLine.innerText = stories[0].narration1
-}
-*/
+/* Displaying start Story */ 
 
 function showNarrations(object) {
     console.log(object.narration1)
-    narrationStoryLine.innerText = stories[0].narration1
+    narrationStoryLine.innerText = object.narration1    
 }
 
 showNarrations(stories[0]);
+
+function showOptions(object) {
+    for (let answer in object.answer) {
+        const button = document.createElement('button')
+        button.classList.add('btn')
+        // button.addEventListener('click')
+        optionButtons.appendChild(button)
+        console.log(object.answer[answer])
+        button.innerText = object.answer[answer]
+    }
+}
+
+showOptions(stories[0]);
+
+
+/*
+function showOptions(object) {
+    console.log(object.answers)
+    optionButtons.innertext = object.answer.option1
+}
+*/
+
+
+
