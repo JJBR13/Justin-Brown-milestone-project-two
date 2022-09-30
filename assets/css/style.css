@@ -34,13 +34,14 @@ body {
     margin: 20px 0;
 }
 
-.btn {
+.op-btn {
     color: #523A28;
     background-color: #E4D4C8;
+    padding: 2%;
     border-radius: 10px;
 }
 
-btn:hover {
+.op-btn:hover {
     color: #E4D4C8 ;
     background-color: #523A28;
     padding: 2%;
