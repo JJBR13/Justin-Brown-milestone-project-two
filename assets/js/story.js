@@ -16,5 +16,37 @@ var stories = [
           option2: "You saw a slippery slug"
         }
 
+    },
+
+    {
+      narration: "But was still Hungry. On Wednesday, Mr. Catipillar... ",
+      answer: {
+        option1: "ate through THREE plums",
+        option2: "Decided to take a NAP inside the juicey plums"
+      }
+    }, 
+
+    {
+      narration: "But was still HUNGRY. On Thursday Mr. Catipillar... ",
+      answer: {
+        option1: "Ate FOUR stawberries",
+        option2: "Saw glowing golden box inside the stawberries "
+      }
+    },
+
+    {
+      narration: "But was still HUNGRY! On Friday, Mr. Catipillar... ",
+      answer: {
+        option1: "Ate through FIVE oranges",
+        option2: "Saw a slug and asked 'How are you?'"
+      }
+    },
+    
+    {
+      narration: "On Saturday Mr. Catipillar... ",
+      answer: {
+        option1: "was still HUNGRY! He ate through, one piece of chocolate cake, one ice cream, one pickle, one slice of swiss cheese, one slice of salami, one lolipop, one piece of cherry pie, on sausauge, one cupcake, and one slice of watermelon ",
+        option2: "Saw a pig lying upside down...."
+      }
     }
 ]

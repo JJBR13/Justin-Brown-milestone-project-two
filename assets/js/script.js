@@ -25,7 +25,7 @@ function showNarrations(object) {
 }
 
 // showNarrations(stories[0]);
-
+// now not working as changed optionButtons to selectButton
 function showOptions(object) {
     for (let answer in object.answer) {
         const button = document.createElement('button')
@@ -49,7 +49,6 @@ for (let optionBtn of selectButton) {
         giveOption(id)
     })
 }
-
 
 showNarrations(stories[currentStoryIndex]);
 
