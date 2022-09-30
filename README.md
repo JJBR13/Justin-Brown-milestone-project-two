@@ -1,8 +1,7 @@
 # The Hungry Caterpillar On Adventures
-# Milestone Project 2: 
-## Deminstration of JavaScript understand, through text based kids stroybook. 
+# Milestone Project 2:  *Deminstration of JavaScript understand, through text based kids stroybook.* 
 
-* DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Caterpillar' is being used to demonstrate understanding of Javascript, and not for finacial gain. 
+DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Caterpillar' is being used to demonstrate understanding of Javascript, and not for finacial gain. 
 
 # Repository 
 
