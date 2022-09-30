@@ -5,7 +5,11 @@
 
 ## References
 
-[Canva.com](https://www.canva.com/colors/color-palettes/sweet-succulents/): Used to gage simplistic pallets for design. 
+- [Canva.com](https://www.canva.com/colors/color-palettes/sweet-succulents/): Used to gage simplistic pallets for design. 
+
+- [Pixabay](https://pixabay.com/illustrations/caterpillar-insect-bug-antennae-5485835/): Acessing free png images to use as favicon and engaging content for the user. 
+
+- [Google Fonts](https://fonts.google.com/): Used to import fonts into style.css. 
 
 ## Credit 
 

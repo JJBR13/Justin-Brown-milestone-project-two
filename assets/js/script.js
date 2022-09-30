@@ -20,7 +20,7 @@ function startGame () {
 // Displaying start Story 
 
 function showNarrations(object) {
-    console.log(object.narration1)
+    console.log(object.narration)
     narrationStoryLine.innerText = object.narration
 }
 
