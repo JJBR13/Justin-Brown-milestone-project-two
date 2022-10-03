@@ -22,19 +22,32 @@
 
 <body>
     <main>
-        <div> 
-            <img id="logo" src="assets/img/home_logo.png" alt="The hungry caterpillar on adventure, logo">
-        </div>
+        <div class="container">
+            <div class="row">
 
-        <div id="story-container">
-            <div id="story-segment" class="controls hide">Plot Line</div>
-            <!-- Add basic description of how it works/ instructions-->
-            <div id="answer-btn" class="hide">
-                <button class="op-btn" data-id="0">Option 1</button>
-                <button class="op-btn" data-id="1">Option 2</button>
-            </div>
-            <div class="controls">
-                <button id="start-btn">Start Adventure</button>
+                <div class="col-12">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img id="logo" src="assets/img/home_logo.png" alt="The hungry caterpillar on adventure, logo" href="index.html">
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-center mt-3">
+                    <div id="story-container">
+                        <div id="story-segment" class="controls hide pt-4">Plot Line</div>
+
+                        <div id="answer-btn" class="hide pt-3">
+                            <button class="op-btn" data-id="0">Option 1</button>
+                            <button class="op-btn" data-id="1">Option 2</button>
+                        </div>
+
+                        <!-- Add basic description of how it works/ instructions -->
+
+                        <div class="controls d-flex justify-content-center align-items-center">
+                            <button id="start-btn">Start Adventure</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
