@@ -45,7 +45,7 @@ var stories = [
     {
       narration: "On Saturday Mr. Catipillar... ",
       answer: {
-        option1: "was still HUNGRY! He ate through, one piece of chocolate cake, one ice cream, one pickle, one slice of swiss cheese, one slice of salami, one lolipop, one piece of cherry pie, on sausauge, one cupcake, and one slice of watermelon ",
+        option1: "was still HUNGRY! He ate through, one piece of chocolate cake, one ice cream, one pickle, one slice of swiss cheese, one slice of salami, one lolipop, one piece of cherry pie, one sausauge, one cupcake, and one slice of watermelon ",
         option2: "Saw a pig lying upside down...."
       }
     }

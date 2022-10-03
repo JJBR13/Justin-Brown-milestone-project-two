@@ -1,0 +1,20 @@
+.content-404 {
+    width: 100%;
+    display: flex;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-404 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #4C9F70;
+}
+
+.content-404 a:hover {
+    border-bottom: 2px solid #fff;
+}
