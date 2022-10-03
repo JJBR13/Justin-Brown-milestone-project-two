@@ -125,6 +125,8 @@ The idea behind this game is to allow children to follow a story along through i
 
 - [Google Fonts](https://fonts.google.com/): Used to import fonts into style.css. 
 
+- [Flaticon](https://www.flaticon.com/): Resourced used to create cartoon illustrations. 
+
 ## Credit 
 
 - Claudia Wild: Great insight to fonts that interect with engagement and learning for children [Find Here](https://www.e-learnconnect.com/post/the-10-best-child-friendly-fonts-for-kids).
