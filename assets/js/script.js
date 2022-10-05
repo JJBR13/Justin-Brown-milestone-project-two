@@ -47,3 +47,15 @@ function giveOption(selected) {
   currentStoryIndex += 1
   showNarrations(stories[currentStoryIndex]);
 }
+
+// Img pop up 
+
+var images = ["assets/img/illustration/plum3.png", "assets/illustration/strawberry4.png", "assets/illustration/orange5.png"]
+
+function imgPopUp () {
+    document.getElementById('images').src = images[0];
+
+    for( i = 0; i < images.length; i++) {
+        console.log('images[i]')
+    }
+}
