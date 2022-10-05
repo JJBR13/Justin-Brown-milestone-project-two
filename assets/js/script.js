@@ -4,6 +4,7 @@ const optionContainer = document.getElementById('answer-btn')
 const startButton = document.getElementById('start-btn')
 const selectButtons = optionContainer.getElementsByClassName('op-btn')
 const narrationStoryLine = document.getElementById('story-segment')
+const instructions = document.getElementById('instructions')
 
 let currentStoryIndex = 0;
 let selectOptions = [];
@@ -16,6 +17,7 @@ function startGame() {
   startButton.classList.add('hide');
   narrationStoryLine.classList.remove('hide');
   optionContainer.classList.remove('hide');
+  instructions.classList.add('hide')
 
   advanceStory();
 }
