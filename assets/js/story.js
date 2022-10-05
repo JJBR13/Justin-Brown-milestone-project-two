@@ -10,6 +10,14 @@ var stories = [
     },     
 
     {
+      narration: "On Monday, Mr. Caterpillar...",
+      answer: {
+        option1: "Ate ONE apple",
+        // option2: "You saw a slippery slug"
+      }
+
+    },
+    {
         narration: "On Tuesday, Mr. Caterpillar...",
         answer: {
           option1: "Ate TWO pairs",
@@ -21,7 +29,7 @@ var stories = [
     {
       narration: "But was still Hungry. On Wednesday, Mr. Caterpillar... ",
       answer: {
-        option1: "ate through THREE plums",
+        option1: "Ate through THREE plums",
         // option2: "Decided to take a NAP inside the juicey plums"
       }
     }, 
@@ -45,7 +53,7 @@ var stories = [
     {
       narration: "On Saturday Mr. Caterpillar... ",
       answer: {
-        option1: "was still HUNGRY! He ate through, one piece of chocolate cake, one ice cream, one pickle, one slice of swiss cheese, one slice of salami, one lolipop, one piece of cherry pie, one sausauge, one cupcake, and one slice of watermelon ",
+        option1: "Was still HUNGRY! He ate through, one piece of chocolate cake, one ice cream, one pickle, one slice of swiss cheese, one slice of salami, one lolipop, one piece of cherry pie, one sausauge, one cupcake, and one slice of watermelon ",
         // option2: "Saw a pig lying upside down...."
       }
     }

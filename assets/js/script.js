@@ -5,11 +5,12 @@ const startButton = document.getElementById('start-btn')
 const selectButtons = optionContainer.getElementsByClassName('op-btn')
 const narrationStoryLine = document.getElementById('story-segment')
 
-
 let currentStoryIndex = 0;
 let selectOptions = [];
+let narrationType = 0;
 
 startButton.addEventListener('click', startGame);
+// selectButtons.addEventListener('click', imgSelect);
 
 function startGame() {
   startButton.classList.add('hide');
@@ -20,10 +21,11 @@ function startGame() {
 }
 
 function advanceStory(){
+    narrationType = 0;
     if(currentStoryIndex < stories.length){
         showNarrations(stories[currentStoryIndex]);
         selectButtons[0].innerHTML = stories[currentStoryIndex].answer.option1;
-        currentStoryIndex++;
+        currentStoryIndex++; 
     }
     else{
         // have the code to program the finish
@@ -34,21 +36,6 @@ function advanceStory(){
 // Displaying start Story 
 
 function showNarrations(object) {
-  console.log(object.narration)
-  narrationStoryLine.innerText = object.narration
-
-}
-
-// Narration Typed
-
-// Img pop up 
-
-var images = ["assets/img/illustration/plum3.png", "assets/illustration/strawberry4.png", "assets/illustration/orange5.png"]
-
-function imgPopUp () {
-    document.getElementById('images').src = images[0];
-
-    for( i = 0; i < images.length; i++) {
-        console.log('images[i]')
-    }
+  //console.log(object.narration)
+  narrationStoryLine.innerText = object.narration;
 }
