@@ -16,18 +16,19 @@ function startGame() {
   narrationStoryLine.classList.remove('hide');
   optionContainer.classList.remove('hide');
 
-  // looping through answer.option1 on both btns 
+  advanceStory();
+}
 
-  let index = 0;
-  for (let optionBtn of selectButtons) {
-    optionBtn.innerHTML = stories[index].answer.option1;
-    optionBtn.addEventListener("click", function (event) {
-      const id = event.target.getAttribute("data-id")
-      giveOption(id)
-    })
-    index++
-  }
-  showNarrations(stories[currentStoryIndex]);
+function advanceStory(){
+    if(currentStoryIndex < stories.length){
+        showNarrations(stories[currentStoryIndex]);
+        selectButtons[0].innerHTML = stories[currentStoryIndex].answer.option1;
+        currentStoryIndex++;
+    }
+    else{
+        // have the code to program the finish
+    }
+    
 }
 
 // Displaying start Story 
@@ -39,14 +40,6 @@ function showNarrations(object) {
 }
 
 // Narration Typed
-
-// Options
-
-function giveOption(selected) {
-  selectOptions.push(selected)
-  currentStoryIndex += 1
-  showNarrations(stories[currentStoryIndex]);
-}
 
 // Img pop up 
 
