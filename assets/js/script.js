@@ -20,6 +20,7 @@ function startGame() {
   optionContainer.classList.remove('hide');
   instructions.classList.add('hide')
 
+  typeText();
   advanceStory();
 }
 
@@ -44,16 +45,34 @@ function showNarrations(object) {
   narrationStoryLine.innerText = object.narration;
 }
 
+// Typing Text 
+
+var txt = ['hello']; // text to type
+var textPosition = 0;
+var speed = 150;
+
+typeText = () => {
+  narrationStoryLine.innerHTML = txt[0].substring(0, textPosition);
+
+  // incrementing position
+  
+  if (textPosition++ != txt[0].length)
+  setTimeout(typeText, speed);
+}
+
 // Images pop up on click 
 
 function imgSelect() {
-    
-    if (selectButtons[0].innerText == "Ate ONE apple") {
-      let image_element = document.getElementById('image_id')
 
+  let image_element = document.getElementById('image_id')
+
+    if (selectButtons[0].innerText == "Ate ONE apple") {
       image_element.src = '/assets/img/illustration/apple1.png'
       imageArea.classList.remove('hide')
-      console.log('image_element')
+      //console.log('image_element')
+    } else if (selectButtons[0].innerText == "Ate TWO pairs") {
+      image_element.src = '/assets/img/illustration/plum3.png'
+      imageArea.classList.remove('hide')
     } else {
         console.log('nope')
     }
