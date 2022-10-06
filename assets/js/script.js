@@ -34,6 +34,7 @@ function advanceStory(){
     }
     else{
         // have the code to program the finish
+        startFiveQuestions()
     }
     
 }
@@ -76,4 +77,32 @@ function imgSelect() {
     } else {
         console.log('nope')
     }
+}
+
+
+// Questions 
+
+const startQuestionButton = document.getElementById('start-game')
+const questionDisplay = document.getElementById('questions')
+
+startQuestionButton.addEventListener('click', startGame)
+
+ function startFiveQuestions() {
+  narrationStoryLine.classList.add('hide')
+  optionContainer.classList.add('hide')
+
+  startQuestionButton.classList.remove('hide')
+  questionDisplay.classList.remove('hide')
+}
+
+function startGame(){
+  console.log('starting game')
+}
+
+function setNextQuestion() {
+
+}
+
+function selectAnswer() {
+
 }
