@@ -40,12 +40,8 @@
                             <img src="#" id="image_id" width="200" height="200">
                         </div>
                 
-                        <div id="answer-btn" class="hide d-flex justify-content-center pt-3">
-                            
+                        <div id="option-btn" class="hide d-flex justify-content-center pt-3">
                             <button class="op-btn" onclick="advanceStory()">Option 1</button>
-                           
-                            <!-- <button class="op-btn" data-id="1">Option 2</button> -->
-
                         </div>
 
                         <!-- Basic description of how it works/ instructions -->
@@ -56,11 +52,30 @@
                         </div>
                         
                         <div class="controls d-flex justify-content-center align-items-center">
-                            <button id="start-btn">Start Adventure</button>
+                            <button id="start-btn" class="s-btn">Start Adventure</button>
+                        </div>
+
+                        <!-- Questions -->
+
+                        <div id="questions" class="hide">
+                            <div>
+                                <p> These are my in game instructions</p>
+                            </div>
+
+                            <div id="answer-btn" class="hide">
+                                <button class="answer-btn"></button>
+                                <button class="answer-btn"></button>
+                                <button class="answer-btn"></button>
+                                <button class="answer-btn"></button>
+                            </div>
+                        </div>
+                        
+                        <div class="controls">
+                            <button id="start-game" class="s-btn hide">Start Questions</button>
+                            <button id="next-btn" class=" hide"></button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </main>

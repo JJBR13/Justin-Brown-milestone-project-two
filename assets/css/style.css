@@ -54,14 +54,14 @@ body {
     border-radius: 10px;
 }
 
-#start-btn { 
+.s-btn { 
     color: black;
     background-color: #C0D39A;
     padding: 2%;
     border-radius: 10px;
 }
 
-#start-btn:hover { 
+.s-btn:hover { 
     color: whitesmoke;
     background-color: #4F5F2C;
     padding: 2%;
@@ -76,4 +76,15 @@ body {
 
 .hide {
     visibility: hidden;
+}
+
+/* Quiz CSS */ 
+
+.btn.correct {
+    background-color: green;
+    color: black;
+}
+
+.btn.wrong {
+    background-color: red;
 }
