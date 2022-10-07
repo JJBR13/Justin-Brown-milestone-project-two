@@ -115,9 +115,19 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   questionDisplay.innerText = question.question
+  question.answers.forEach(answer => {
+    const button = document.createElement('button')
+    button.innerText = answer.text
+    button.classList.add('ans-btn')
+    if (answer.correct) {
+      button.dataset.correct = answer.correct
+    }
+    button.addEventListener('click', chooseAnswer)
+    answerButtons.appendChild(button)
+  })
 }
 
-function selectAnswer() {
+function chooseAnswer() {
 
 }
 
