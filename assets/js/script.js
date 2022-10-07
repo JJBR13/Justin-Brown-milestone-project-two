@@ -132,13 +132,30 @@ function orignalState () {
   }
 }
 
-function chooseAnswerResult(event) {
+
+function chooseAnswer(event) {
   const buttonSelected = event.target
   const correct = buttonSelected.dataset.correct
-  setResult(document.body, correct) // select if text is correct or wrong
-  Array.from(answerButtons.children). // creating array from buttons, allowing loop
-  forEach(button => { setStatusClass(button, button.data.correct)
+  // creating array from buttons, allowing loop
+  Array.from(answerButtons.children).forEach(button => { 
+    setResult(button, button.dataset.correct)
   })
+}
+
+function setResult (i, correct) {
+  clearSetResult(i) 
+  if (correct) {
+    i.classList.add('correct')
+    //remove hover function??
+  } else {
+    i.classList.add('wrong')
+        //remove hover function??
+  }
+}
+
+function clearSetResult (i) {
+    i.classList.remove('correct')
+    i.classList.remove('wrong')
 }
 
 // Question Objects
