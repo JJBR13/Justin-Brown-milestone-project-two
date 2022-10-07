@@ -12,7 +12,6 @@ let selectOptions = [];
 let narrationType = 0;
 
 startButton.addEventListener('click', startStory);
-// selectButtons.addEventListener('click', imgSelect);
 
 function startStory() {
   startButton.classList.add('hide');
@@ -86,19 +85,20 @@ const startQuestionButton = document.getElementById('start-game')
 const questionDisplay = document.getElementById('questions')
 const answerButtons = document.getElementById('answer-btn')
 
-const shuffleQuestions, currentQuestion
+let shuffleQuestions, currentQuestion
 
  function startFiveQuestions() {
   narrationStoryLine.classList.add('hide')
   optionContainer.classList.add('hide')
   
-  // hiding answer buttons when instructions show 
+  // // hiding answer buttons when instructions show 
 
-  answerButtons.classList.add('hide')
+  // answerButtons.classList.add('hide')
 
   startQuestionButton.classList.remove('hide')
   questionDisplay.classList.remove('hide')
 }
+
 
 function startGame(){
  answerButtons.classList.remove('hide')
@@ -108,12 +108,13 @@ function startGame(){
  setNextQuestion()
 }
 
+
 function setNextQuestion() {
-  showQuestion(showQuestion[currentQuestion])
+  showQuestion(shuffleQuestions[currentQuestion])
 }
 
 function showQuestion(question) {
-  
+  questionDisplay.innerText = question.question
 }
 
 function selectAnswer() {
