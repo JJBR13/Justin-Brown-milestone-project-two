@@ -78,7 +78,6 @@ function imgSelect() {
     }
 }
 
-
 // Questions 
 
 const startQuestionButton = document.getElementById('start-game')
@@ -87,6 +86,11 @@ const questionDisplay = document.getElementById('questions')
 const answerButtons = document.getElementById('answer-btn')
 
 let shuffleQuestions, currentQuestion
+
+nextButton.addEventListener('click', () => {
+  currentQuestion++
+  setNextQuestion()
+})
 
  function startFiveQuestions() {
   narrationStoryLine.classList.add('hide')
@@ -132,7 +136,6 @@ function orignalState () {
   }
 }
 
-
 function chooseAnswer(event) {
   const buttonSelected = event.target
   const correct = buttonSelected.dataset.correct
@@ -140,6 +143,11 @@ function chooseAnswer(event) {
   Array.from(answerButtons.children).forEach(button => { 
     setResult(button, button.dataset.correct)
   })
+  if (shuffleQuestions.length > currentQuestion + 1) {
+  nextButton.classList.remove('hide')
+  } else {
+    // show score & thank you message 
+  }
 }
 
 function setResult (i, correct) {
@@ -149,7 +157,7 @@ function setResult (i, correct) {
     //remove hover function??
   } else {
     i.classList.add('wrong')
-        //remove hover function??
+    //remove hover function??
   }
 }
 
@@ -168,6 +176,16 @@ const questions = [
       { text: 'Oranges', correct: false}, 
       { text: 'Strawberries', correct: false},
       { text: 'Apple', correct: false}
+    ]
+  }, 
+
+  { 
+    question: 'hello?',
+    answers: [ 
+      { text: 'fly', correct: true},
+      { text: 'good', correct: false}, 
+      { text: 'bye', correct: false},
+      { text: 'just', correct: false}
     ]
   }
 ]
