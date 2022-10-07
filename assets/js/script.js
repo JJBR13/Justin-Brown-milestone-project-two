@@ -82,6 +82,7 @@ function imgSelect() {
 // Questions 
 
 const startQuestionButton = document.getElementById('start-game')
+const nextButton = document.getElementById('next-btn')
 const questionDisplay = document.getElementById('questions')
 const answerButtons = document.getElementById('answer-btn')
 
@@ -91,14 +92,9 @@ let shuffleQuestions, currentQuestion
   narrationStoryLine.classList.add('hide')
   optionContainer.classList.add('hide')
   
-  // // hiding answer buttons when instructions show 
-
-  // answerButtons.classList.add('hide')
-
   startQuestionButton.classList.remove('hide')
   questionDisplay.classList.remove('hide')
 }
-
 
 function startGame(){
  answerButtons.classList.remove('hide')
@@ -108,8 +104,8 @@ function startGame(){
  setNextQuestion()
 }
 
-
 function setNextQuestion() {
+  orignalState()
   showQuestion(shuffleQuestions[currentQuestion])
 }
 
@@ -125,6 +121,15 @@ function showQuestion(question) {
     button.addEventListener('click', chooseAnswer)
     answerButtons.appendChild(button)
   })
+}
+
+function orignalState () {
+  nextButton.classList.add('hide')
+
+  // Checking if there is an chile within answerButtons
+  while (answerButtons.firstChild) {
+    answerButtons.removeChild(answerButtons.firstChild)
+  }
 }
 
 function chooseAnswer() {
