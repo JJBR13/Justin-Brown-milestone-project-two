@@ -86,14 +86,14 @@ const startQuestionButton = document.getElementById('start-game')
 const questionDisplay = document.getElementById('questions')
 const answerButtons = document.getElementById('answer-btn')
 
-//startQuestionButton.addEventListener('click', startGame)
+const shuffleQuestions, currentQuestion
 
  function startFiveQuestions() {
   narrationStoryLine.classList.add('hide')
   optionContainer.classList.add('hide')
   
   // hiding answer buttons when instructions show 
-  
+
   answerButtons.classList.add('hide')
 
   startQuestionButton.classList.remove('hide')
@@ -103,13 +103,29 @@ const answerButtons = document.getElementById('answer-btn')
 function startGame(){
  answerButtons.classList.remove('hide')
  startQuestionButton.classList.add('hide')
- console.log(questions)
+ shuffleQuestions = questions.sort(() => Math.random() - .5)
+ currentQuestion = 0;
+ setNextQuestion()
 }
 
 function setNextQuestion() {
+  showQuestion(showQuestion[currentQuestion])
+}
 
+function showQuestion(question) {
+  
 }
 
 function selectAnswer() {
 
 }
+
+const questions = [
+  { 
+    question: 'On Tuesday what did Mr. Caterpillar eat?',
+    answers: [ 
+      { text: 'Pears', correct: true},
+      { text: 'oranges', correct: false}
+    ]
+  }
+]
