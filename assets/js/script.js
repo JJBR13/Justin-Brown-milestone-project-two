@@ -84,19 +84,26 @@ function imgSelect() {
 
 const startQuestionButton = document.getElementById('start-game')
 const questionDisplay = document.getElementById('questions')
+const answerButtons = document.getElementById('answer-btn')
 
-startQuestionButton.addEventListener('click', startGame)
+//startQuestionButton.addEventListener('click', startGame)
 
  function startFiveQuestions() {
   narrationStoryLine.classList.add('hide')
   optionContainer.classList.add('hide')
+  
+  // hiding answer buttons when instructions show 
+  
+  answerButtons.classList.add('hide')
 
   startQuestionButton.classList.remove('hide')
   questionDisplay.classList.remove('hide')
 }
 
 function startGame(){
-  console.log('starting game')
+ answerButtons.classList.remove('hide')
+ startQuestionButton.classList.add('hide')
+ console.log(questions)
 }
 
 function setNextQuestion() {
