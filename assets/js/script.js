@@ -66,11 +66,11 @@ function imgSelect() {
 
   let image_element = document.getElementById('image_id')
 
-    if (selectButtons[0].innerText == "Ate ONE apple") {
+    if (selectButtons[0].innerText == "Ate ONE apple. But he was still hungry.") {
       image_element.src = '/assets/img/illustration/apple1.png'
       imageArea.classList.remove('hide')
       //console.log('image_element')
-    } else if (selectButtons[0].innerText == "Ate TWO pairs") {
+    } else if (selectButtons[0].innerText == "Ate TWO pairs. But he was still hungry.") {
       image_element.src = '/assets/img/illustration/plum3.png'
       imageArea.classList.remove('hide')
     } else {
@@ -166,26 +166,3 @@ function clearSetResult (i) {
     i.classList.remove('wrong')
 }
 
-// Question Objects
-
-const questions = [
-  { 
-    question: 'On Tuesday what did Mr. Caterpillar eat?',
-    answers: [ 
-      { text: 'Pears', correct: true},
-      { text: 'Oranges', correct: false}, 
-      { text: 'Strawberries', correct: false},
-      { text: 'Apple', correct: false}
-    ]
-  }, 
-
-  { 
-    question: 'hello?',
-    answers: [ 
-      { text: 'fly', correct: true},
-      { text: 'good', correct: false}, 
-      { text: 'bye', correct: false},
-      { text: 'just', correct: false}
-    ]
-  }
-]
