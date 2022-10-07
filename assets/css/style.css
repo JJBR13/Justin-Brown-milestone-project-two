@@ -80,11 +80,11 @@ body {
 
 /* Quiz CSS */ 
 
-.btn.correct {
+.btn-correct {
     background-color: green;
     color: black;
 }
 
-.btn.wrong {
+.btn-wrong {
     background-color: red;
 }

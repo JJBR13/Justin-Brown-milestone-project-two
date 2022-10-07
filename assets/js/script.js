@@ -126,22 +126,31 @@ function showQuestion(question) {
 function orignalState () {
   nextButton.classList.add('hide')
 
-  // Checking if there is an chile within answerButtons
+  // Checking if there is an child within answerButtons, if not removing it. 
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild)
   }
 }
 
-function chooseAnswer() {
-
+function chooseAnswerResult(event) {
+  const buttonSelected = event.target
+  const correct = buttonSelected.dataset.correct
+  setResult(document.body, correct) // select if text is correct or wrong
+  Array.from(answerButtons.children). // creating array from buttons, allowing loop
+  forEach(button => { setStatusClass(button, button.data.correct)
+  })
 }
+
+// Question Objects
 
 const questions = [
   { 
     question: 'On Tuesday what did Mr. Caterpillar eat?',
     answers: [ 
       { text: 'Pears', correct: true},
-      { text: 'oranges', correct: false}
+      { text: 'Oranges', correct: false}, 
+      { text: 'Strawberries', correct: false},
+      { text: 'Apple', correct: false}
     ]
   }
 ]
