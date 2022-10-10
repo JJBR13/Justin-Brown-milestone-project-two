@@ -28,7 +28,7 @@ function advanceStory(){
         showNarrations(stories[currentStoryIndex]);
         selectButtons[0].innerHTML = stories[currentStoryIndex].answer.option1;
         typeText();
-        imgSelect();
+        // imgSelect();
         currentStoryIndex++; 
     }
     else{
@@ -59,21 +59,8 @@ typeText = () => {
 
 // Images pop up on click 
 
-function imgSelect() {
+let imgArray = ["/assets/img/illustration/1_start", "/assets/img/illustration/1.png", "/assets/img/illustration/2.png", "/assets/img/illustration/3.png", "/assets/img/illustration/4.png", "/assets/img/illustration/5.png", "/assets/img/illustration/6.png", "/assets/img/illustration/7.png", "/assets/img/illustration/8.png", "/assets/img/illustration/9.png", "/assets/img/illustration/1.png"]
 
-  let image_element = document.getElementById('image_id')
-
-    if (selectButtons[0].innerText == "Ate ONE apple. But he was still hungry.") {
-      image_element.src = '/assets/img/illustration/apple1.png'
-      imageArea.classList.remove('hide')
-      //console.log('image_element')
-    } else if (selectButtons[0].innerText == "Ate TWO pairs. But he was still hungry.") {
-      image_element.src = '/assets/img/illustration/plum3.png'
-      imageArea.classList.remove('hide')
-    } else {
-        console.log('nope')
-    }
-}
 
 // Questions 
 
@@ -92,6 +79,7 @@ nextButton.addEventListener('click', () => {
  function startFiveQuestions() {
   narrationStoryLine.classList.add('hide')
   optionContainer.classList.add('hide')
+  imageArea.classList.add('hide')
   
   startQuestionButton.classList.remove('hide')
   questionDisplay.classList.remove('hide')
