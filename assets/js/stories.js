@@ -17,7 +17,7 @@ var stories = [
     },
     
     {
-        narration: "On Tuesday, he...",
+      narration: "On Tuesday, he...",
         answer: {
           option1: "Ate TWO pairs. But he was still hungry."
         }

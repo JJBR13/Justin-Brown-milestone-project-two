@@ -151,7 +151,6 @@ function setResult (i, correct) {
   clearSetResult(i) 
   if (correct) {
     i.classList.add('correct')
-    console.log(incrementScore)
     //remove hover function??
   } else {
     i.classList.add('wrong')
