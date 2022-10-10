@@ -1,4 +1,4 @@
-# The Hungry Caterpillar On Adventures
+# The Hungry Caterpillar
 # Milestone Project 2:  *Deminstration of JavaScript understand, through text based kids stroybook.* 
 
 DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Caterpillar' is being used to demonstrate understanding of Javascript, and not for finacial gain. 
@@ -126,6 +126,8 @@ The idea behind this game is to allow children to follow a story along through i
 - [Google Fonts](https://fonts.google.com/): Used to import fonts into style.css. 
 
 - [Flaticon](https://www.flaticon.com/): Resourced used to create cartoon illustrations. 
+
+- [Clean PNG](https://www.cleanpng.com/free/hungry-caterpillar-,2.html): Used Eric Care illustrations where possible, the PNG were located from ths site.
 
 ## Credit 
 
