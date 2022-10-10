@@ -1,5 +1,3 @@
-// Start game 
-
 const optionContainer = document.getElementById('option-btn')
 const startButton = document.getElementById('start-btn')
 const selectButtons = optionContainer.getElementsByClassName('op-btn')
@@ -12,6 +10,8 @@ let selectOptions = [];
 let narrationType = 0;
 
 startButton.addEventListener('click', startStory);
+
+// Start game  
 
 function startStory() {
   startButton.classList.add('hide');
@@ -41,22 +41,19 @@ function advanceStory(){
 // Displaying start Story 
 
 function showNarrations(object) {
-  //console.log(object.narration)
   narrationStoryLine.innerText = object.narration;
 }
 
 // Typing Text 
 
-var txt = ['hello']; // text to type
-var textPosition = 0;
-var speed = 150;
+let txt = stories[0].narration; // text to type
+let textPosition = 0;
+let speed = 100;
 
 typeText = () => {
-  narrationStoryLine.innerHTML = txt[0].substring(0, textPosition);
-
+  narrationStoryLine.innerHTML = txt.substring(0, textPosition);
   // incrementing position
-  
-  if (textPosition++ != txt[0].length)
+  if (textPosition++ != txt.length)
   setTimeout(typeText, speed);
 }
 
