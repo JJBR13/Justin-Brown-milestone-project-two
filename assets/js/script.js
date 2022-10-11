@@ -24,8 +24,8 @@ function startStory() {
   startButton.classList.add('hide');
   narrationStoryLine.classList.remove('hide');
   optionContainer.classList.remove('hide');
-  instructions.classList.add('hide')
-  answerButtons.classList.add('hide')
+  instructions.classList.add('hide');
+  answerButtons.classList.add('hide');
 
   advanceStory();
 }
@@ -169,8 +169,10 @@ function clearSetResult (i) {
 backButton.addEventListener('click', backToStart);
 
 function backToStart() {
-  defaultStart.classList.remove('hide')
-  thankYou.classList.add('hide')
-  backButton.classList.add('hide')
-  console.log(defaultStart)
+  //defaultStart.classList.remove('hide');
+  thankYou.classList.add('hide');
+  backButton.classList.add('hide');
+  startButton.classList.remove('hide');
+  instructions.classList.remove('hide');
+  console.log(defaultStart);
 }

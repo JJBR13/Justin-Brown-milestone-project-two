@@ -41,15 +41,17 @@
                     <!-- Show first  -->
                     
                     <div class="row">
-                        <div id="default" class="col-12 hide">
-                            <div id="instructions" class="col-12 justify-content-center align-items-center">
+                        <div id="default" class="col-12 justify-content-center hide">
+                            <div id="instructions" class="col-12">
                                 <p> Follow the Hungry Caterpillar through his journey, you might end up feeling
-                                    hungry.
-                                    Reading the book allowed, counting the food as you go...</p>
+                                    hungry.</p>
+                                <p> Reading the book allowed, counting the food as you go...</p>
+                                <p> At the end of the story there is a game to see how much you can remember! </p>
+                                
                             </div>
 
-                            <div class="controls justify-content-center align-items-center">
-                                <button id="start-btn" class="s-btn">Start Story</button>
+                            <div class="controls d-flex justify-content-center align-items-center">
+                                <button id="start-btn" class="s-btn mb-2">Start Story</button>
                             </div>
                         </div>
                     </div>
@@ -58,14 +60,14 @@
 
                     <div class="row">
                         <div class="col-12">
-                            <div id="story-segment" class="controls justify-content-center align-items-center hide pt-4">Plot Line
+                            <div id="story-segment" class="controls d-flex justify-content-center align-items-center hide pt-4">Plot Line
                             </div>
 
                             <div id="image-div" class="col-12 hide">
                                 <img src="#" id="image_id" width="200" height="200">
                             </div>
 
-                            <div id="option-btn" class="hide justify-content-center align-items-center pt-3">
+                            <div id="option-btn" class="hide d-flex justify-content-center align-items-center pt-3 m-3">
                                 <button class="op-btn" onclick="advanceStory()">Option 1</button>
                             </div>
                         </div>
@@ -108,8 +110,8 @@
                             <div id="thank_you" class="hide">
                                 <p> Thank you for playing, hope you enjoyed yourself and your not to hungry!</p>
                             </div>
-                            <div id="toStart" class="hide">
-                                <button>Back To Story</button>
+                            <div id="toStart" class="d-flex justify-content-center align-items-center hide">
+                                <button class="s-btn">Back To Story</button>
                             </div>
                         </div>
                     </div>
