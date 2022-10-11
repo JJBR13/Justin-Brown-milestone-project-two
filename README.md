@@ -12,6 +12,7 @@ DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Cater
  [User Experience](#user-eperience)
    * [User Stories](#user-stroies)
 - [Design](#design)
+    + [Wireframes](#wireframes)
     + [Colour Palette](#colour-palette)
     + [Typography](#typography)
     + [Images](#images)
@@ -24,7 +25,11 @@ DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Cater
     + [Project Creation](#project-creation)
     + [GitHub Pages](#github-pages)
     + [Local Deployment](#local-deployment)
-
+- [References, Credit, Framework & Programs](#references-credit-framework--programs)
+    + [References](#references)
+    + [Credit](#credit)
+    + [Framework](#framework)
+    + [Programs](#programs)
 ## Ideology
 
 The idea behind this game is to allow children to follow a story along through interection and illustrations. Both to learn, better their reading and comprehension skills. 
@@ -53,12 +58,18 @@ The idea behind this game is to allow children to follow a story along through i
 
 ## Design 
 
+![Design](documents/design.png)
+
+### Wireframes 
+
+[Click here for Wireframe PDF](wireframes.pdf)
+
 ### Colour Pallete 
 
 - The colour scheme was planned to go hand in hand with the context of the book and ilustrations. Hence selecting natural and nuteral pallettes of the browns and greens were chosen to create desired result. 
 
-[Colour Pallette1](documents/pallet1.png)
-[Colour Pallette2](documents/pallet2.png)
+![Colour Pallette1](documents/pallet1.png)
+![Colour Pallette2](documents/pallet2.png)
 
 ### Typography 
 
@@ -74,19 +85,54 @@ The idea behind this game is to allow children to follow a story along through i
 
 ### Favicon 
 
-[Favicon](documents/Favicon%20.png)
+![Favicon](documents/Favicon%20.png)
 
-- A site wide favicon of a the hungry caterpillar, this creates an image to be present within the tabs allowing the user to easily identify the site when multiple are open. 
+- A site wide favicon of a the hungry caterpillar, this creates an image to be present within the tabs allowing the user to easily identify the site when multiple are open. Aids user stories: 
+
+> i. Being the parent, I want easy follow and understanding of how it works.
 
 ### Start Button 
 
+- A button appears as on page load that will initiate the start of the story, this will allow the user to start the story after they had read and understood the instructions, following user stories: 
+
+> i. Being the child, I want easy flow to the game.
+> ii. Being the parent, I want easy follow and understanding of how it works.
+
 ### Instructions
+
+- Instructions will appear in two areas. Firstly, on page load directing the user to what is happening before pressing start story. Secondly, before they start the comprehention quiz, this allows the user to understand how the quiz will work. Enhancing user stories:  
+
+> i. Being the parent, I want easy follow and understanding of how it works.
+> ii. Being the child, I want easy flow to the game.
 
 ### Error Page 
 
+- This is .html file that has been created and customised to enable the user to navigate back to the index.html page, to restart the story, if an error happens when navigating the site. Allowing user below user stories to be met: 
+
+> i. Being the parent, I want easy follow and understanding of how it works.
+> ii. Being the child, I want easy flow to the game.
+
 ### Story Interateraction 
 
-## Feature releases 
+- To add interactive elements is highly import to enage the user through out the progresstion of the story. This was done by adding images to pop up that were associated with the story. Meeting requirement of user story: 
+
+> i. Being a Asylum seeker, I would like visual aids to visulise the text. 
+
+### Comprehension Quiz
+
+- This allows the user to test there understading of the story they have read, consolidating thier understating. Allowing user story: 
+
+> i. Being the parent, I want to have educational value. 
+
+### Type Naration Text 
+
+> i. Being a Asylum seeker, I want to be able to read the story at my own pace. 
+
+### Responsive On All Devices 
+
+> i. Being the child, I want to be able to use it on my Ipad/ tablet phone. 
+
+## Feature Releases 
 
 ### 1) Creation of animations 
 
@@ -105,6 +151,10 @@ The idea behind this game is to allow children to follow a story along through i
 - [HTML5](https://www.w3schools.com/whatis/whatis_html.asp)
 - [CSS3](https://www.w3schools.com/whatis/whatis_css.asp)
 - [JavaScript](https://www.w3schools.com/whatis/whatis_js.asp)
+
+## Testing 
+
+- Please see [TEST.md](TEST.md) for a breakdown of website testing and debugging.
 
 ## Deployment 
 
@@ -134,14 +184,14 @@ The idea behind this game is to allow children to follow a story along through i
 
 ### Local Deployment 
 
-1. Navigate to the [Github](https://github.com/JJBR13/Justin-Brown-milestone-project-one).
+1. Navigate to the [Github](https://github.com/JJBR13/Justin-Brown-milestone-project-two).
 2. Click the "Code" dropdown button. 
 3. Select "Download ZIP" or " Open with GitHub Desktop"
 4. Unpackage ZIP file locally with Integrated Development Environment (IDE).
 
-# References & Credit 
+## References, Credit, Framework & Programs 
 
-## References
+### References
 
 - [Canva.com](https://www.canva.com/colors/color-palettes/sweet-succulents/): Used to gage simplistic pallets for design. 
 
@@ -153,6 +203,19 @@ The idea behind this game is to allow children to follow a story along through i
 
 - [Clean PNG](https://www.cleanpng.com/free/hungry-caterpillar-,2.html): Used Eric Care illustrations where possible, the PNG were located from ths site.
 
-## Credit 
+### Credit 
 
 - Claudia Wild: Great insight to fonts that interect with engagement and learning for children [Find Here](https://www.e-learnconnect.com/post/the-10-best-child-friendly-fonts-for-kids).
+
+### Framework 
+
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/contents/#bootstrap-source-code)
+  - Bootstrap v5.2 was used throughout the entire site to make it responsive.
+
+### Programs 
+
+- [Balsamiq](https://balsamiq.com/)
+   - Allowed the creation of the wireframes.
+
+- [Adobe Suite](https://www.adobe.com/uk/)
+  - Used to adjust/enhance images and create the logo for the site.
