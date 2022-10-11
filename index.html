@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!-- Bootstrap library -->
+    <!-- Bootstrap library -->
 
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Favicon -->
 
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-    <title>THE The Very Hungry Caterpillar.</title>
+    <title>The Very Hungry Caterpillar.</title>
 
     <!-- Stylesheet -->
 
@@ -23,44 +24,63 @@
 <body>
     <main>
         <div class="container">
-            <div class="row">
 
+            <!-- Logo -->
+
+            <div class="row">
                 <div class="col-12">
                     <div class="d-flex justify-content-center align-items-center">
-                        <img id="logo" src="assets/img/home_logo.png" alt="The hungry caterpillar on adventure, logo" href="index.html">
+                        <img id="logo" src="assets/img/home_logo.png" alt="The hungry caterpillar on adventure, logo">
                     </div>
                 </div>
+            </div>
 
-                <div class="col-12 d-flex justify-content-center mt-3">
-                    <div id="story-container">
-                        <div id="story-segment" class="controls hide pt-4">Plot Line
+            <div class="row">
+                <div id="story-container" class="col-12 justify-content-center mt-3">
+
+                    <!-- Show first  -->
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="instructions" class="col-12 justify-content-center align-items-center">
+                                <p> Follow the Hungry Caterpillar through his journey, you might end up feeling
+                                    hungry.
+                                    Reading the book allowed, counting the food as you go...</p>
+                            </div>
+
+                            <div class="controls justify-content-center align-items-center">
+                                <button id="start-btn" class="s-btn">Start Adventure</button>
+                            </div>
                         </div>
+                    </div>
 
-                        <div id="image-div" class="col-12 d-flex justify-content-center hide"> 
-                            <img src="#" id="image_id" width="200" height="200">
+                    <!-- Show Second -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="story-segment" class="controls justify-content-center align-items-center hide pt-4">Plot Line
+                            </div>
+
+                            <div id="image-div" class="col-12 hide">
+                                <img src="#" id="image_id" width="200" height="200">
+                            </div>
+
+                            <div id="option-btn" class="hide justify-content-center align-items-center pt-3">
+                                <button class="op-btn" onclick="advanceStory()">Option 1</button>
+                            </div>
                         </div>
-                
-                        <div id="option-btn" class="hide d-flex justify-content-center pt-3">
-                            <button class="op-btn" onclick="advanceStory()">Option 1</button>
-                        </div>
+                    </div>
 
-                        <!-- Basic description of how it works/ instructions -->
+                    <!-- Questions -->
 
-                        <div id="instructions" class="col-12 d-flex justify-content-center align-items-center">
-                            <p> Follow the Hungry Caterpillar through his journey, you might end up feeling hungry.
-                                Reading the book allowed, counting the food as you go...</p>
-                        </div>
-                        
-                        <div class="controls d-flex justify-content-center align-items-center">
-                            <button id="start-btn" class="s-btn">Start Adventure</button>
-                        </div>
-
-                        <!-- Questions -->
-
-                        <div>
+                    <!-- Show Third -->
+                    <div class="row">
+                        <div id="game-container" class="col-12 hide">
                             <div id="questions" class="hide">
-                                <p>There are FIVE questions for you to answer, after you click the answer the buttons will change colour to show you what anwser is correct (green) and what answers are wrong (red). <br>
-                                    Give it a go and see how you do. 
+                                <p>There are FIVE questions for you to answer, after you click the answer the buttons
+                                    will change colour to show you what anwser is correct (green) and what answers are
+                                    wrong (red). <br>
+                                    Give it a go and see how you do.
                                 </p>
                             </div>
 
@@ -70,11 +90,14 @@
                                 <button class="ans-btn">answer 3</button>
                                 <button class="ans-btn">answer 4</button>
                             </div>
-                        </div>
-                        
-                        <div class="controls">
-                            <button id="start-game" class="s-btn hide" onclick="startGame()">Start Questions</button>
-                            <button id="next-btn" class="s-btn hide">Next Question</button>
+
+
+                            <div class="controls">
+                                <button id="start-game" class="s-btn hide" onclick="startGame()">Start
+                                    Questions</button>
+                                <button id="next-btn" class="s-btn hide">Next Question</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -88,4 +111,5 @@
     <script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
+
 </html>

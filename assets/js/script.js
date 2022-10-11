@@ -18,6 +18,7 @@ function startStory() {
   narrationStoryLine.classList.remove('hide');
   optionContainer.classList.remove('hide');
   instructions.classList.add('hide')
+  answerButtons.classList.add('hide')
 
   advanceStory();
 }
@@ -68,6 +69,7 @@ const startQuestionButton = document.getElementById('start-game')
 const nextButton = document.getElementById('next-btn')
 const questionDisplay = document.getElementById('questions')
 const answerButtons = document.getElementById('answer-btn')
+const gameContainer = document.getElementById('game-container')
 
 let shuffleQuestions, currentQuestion
 
@@ -77,6 +79,7 @@ nextButton.addEventListener('click', () => {
 })
 
  function startFiveQuestions() {
+  gameContainer.classList.remove('hide')
   narrationStoryLine.classList.add('hide')
   optionContainer.classList.add('hide')
   imageArea.classList.add('hide')
