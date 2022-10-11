@@ -8,9 +8,10 @@ DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Cater
 [Locate project repository here](https://github.com/JJBR13/Justin-Brown-milestone-project-two)
 
 # Contents 
- [Ideology](#ideology)
- [User Experience](#user-eperience)
-   * [User Stories](#user-stroies)
+
+- [Ideology](#ideology)
+- [User Experience](#user-eperience)
+    + [User Stories](#user-stroies)
 - [Design](#design)
     + [Wireframes](#wireframes)
     + [Colour Palette](#colour-palette)
@@ -30,6 +31,7 @@ DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Cater
     + [Credit](#credit)
     + [Framework](#framework)
     + [Programs](#programs)
+    
 ## Ideology
 
 The idea behind this game is to allow children to follow a story along through interection and illustrations. Both to learn, better their reading and comprehension skills. 
