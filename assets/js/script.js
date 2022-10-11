@@ -4,12 +4,19 @@ const selectButtons = optionContainer.getElementsByClassName('op-btn')
 const narrationStoryLine = document.getElementById('story-segment')
 const instructions = document.getElementById('instructions')
 const imageArea = document.getElementById('image-div')
+const defaultStart = document.getElementById('default')
 
 let currentStoryIndex = 0;
 let selectOptions = [];
 let narrationType = 0;
 
 startButton.addEventListener('click', startStory);
+
+function onLoad() {
+  defaultStart.classList.remove('hide')
+}
+
+window.onoad = onLoad();
 
 // Start game  
 
@@ -70,6 +77,8 @@ const nextButton = document.getElementById('next-btn')
 const questionDisplay = document.getElementById('questions')
 const answerButtons = document.getElementById('answer-btn')
 const gameContainer = document.getElementById('game-container')
+const thankYou = document.getElementById('thank_you')
+const backButton = document.getElementById('toStart')
 
 let shuffleQuestions, currentQuestion
 
@@ -134,7 +143,10 @@ function chooseAnswer(event) {
   if (shuffleQuestions.length > currentQuestion + 1) {
   nextButton.classList.remove('hide')
   } else {
-    // show score & thank you message 
+    // End of questions 
+    gameContainer.classList.add('hide')
+    thankYou.classList.remove('hide')
+    backButton.classList.remove('hide')
   }
 }
 
@@ -152,4 +164,13 @@ function setResult (i, correct) {
 function clearSetResult (i) {
     i.classList.remove('correct')
     i.classList.remove('wrong')
+}
+
+backButton.addEventListener('click', backToStart);
+
+function backToStart() {
+  defaultStart.classList.remove('hide')
+  thankYou.classList.add('hide')
+  backButton.classList.add('hide')
+  console.log(defaultStart)
 }
