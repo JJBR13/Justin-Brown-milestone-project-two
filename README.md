@@ -27,7 +27,7 @@ DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Cater
 
 ## Ideology
 
-The idea behind this game is to allow children to follow a story along through interection and illustrations. Both to learn and explpore thier creativity. 
+The idea behind this game is to allow children to follow a story along through interection and illustrations. Both to learn, better their reading and comprehension skills. 
 
 ## User Experience 
 
@@ -38,25 +38,45 @@ The idea behind this game is to allow children to follow a story along through i
 *The children using this story game*
 
 * Being the child, I want easy flow to the game. 
-* Being the child, I want to be able to use it on my parents phone. 
+* Being the child, I want to be able to use it on my Ipad/ tablet phone. 
 
 #### The Parent 
 
-* Being the parent, I want easy accessibility across all devices. 
+* Being the parent, I want to have educational value. 
 * Being the parent, I want easy follow and understanding of how it works. 
 * Being the parent, I want to be able to leave my kid in control of the game. 
+
+#### Asylum Seeker 
+
+* Being a Asylum seeker, I want to be able to read the story at my own pace. 
+* Being a Asylum seeker, I would like visual aids to visulise the text. 
 
 ## Design 
 
 ### Colour Pallete 
 
+- The colour scheme was planned to go hand in hand with the context of the book and ilustrations. Hence selecting natural and nuteral pallettes of the browns and greens were chosen to create desired result. 
+
+[Colour Pallette1](documents/pallet1.png)
+[Colour Pallette2](documents/pallet2.png)
+
 ### Typography 
 
+[*Sourced via google fonts.*](https://fonts.google.com/)
+
+- All content text used 'Architects Daughter', this was decided by an arcticle written by Claudia Wild. She dicussed the top 10 fonts for children. Discucussing readability and ability for the font. 
+
 ### Images 
+
+- The use of images were highly important to create the engagement factor for the user. Through out the stroy the user would have an illustration pop up that was related to the reading of the current text. 
 
 ## Current Features
 
 ### Favicon 
+
+[Favicon](documents/Favicon%20.png)
+
+- A site wide favicon of a the hungry caterpillar, this creates an image to be present within the tabs allowing the user to easily identify the site when multiple are open. 
 
 ### Start Button 
 
@@ -75,6 +95,10 @@ The idea behind this game is to allow children to follow a story along through i
 ### 2) Addition of more books/ website 
 
 - Add more children stories in this format. Creating a website to house all the story games to allow multiple options. 
+
+### 3) Read the stroy out load
+
+- Create a text to speach reader that reads the narrations to the user. Also maybe has a control pannel that allows the user to pause the reader and select the speed in which the narration is read at. 
 
 ## Languages Used  
 
