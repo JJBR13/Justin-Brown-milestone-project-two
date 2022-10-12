@@ -71,13 +71,13 @@ function imgSelect() {
   let image_element = document.getElementById('image_id')
 
   if (selectButtons[0].innerText == "Caterpillar") {
-    image_element.src = '/assets/img/illustration/0.png'
+    image_element.src = './assets/img/illustration/0.png'
     imageArea.classList.remove('hide')
   } else if (selectButtons[0].innerText == "Ate ONE apple. But he was still hungry.") {
-    image_element.src = '/assets/img/illustration/1.png'
+    image_element.src = './assets/img/illustration/1.png'
     imageArea.classList.remove('hide')
   } else if (selectButtons[0].innerText == "Ate TWO pairs. But he was still hungry.") {
-    image_element.src = '/assets/img/illustration/2.png'
+    image_element.src = './assets/img/illustration/2.png'
     imageArea.classList.remove('hide')
   } else {
       console.log('nope')
