@@ -23,102 +23,101 @@
 
 <body>
     <main class="container">
-        <div >
 
-            <!-- Logo -->
+        <!-- Logo -->
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img id="logo" src="assets/img/home_logo.png" alt="The hungry caterpillar on adventure, logo">
-                    </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img id="logo" src="assets/img/home_logo.png" alt="The hungry caterpillar on adventure, logo">
                 </div>
             </div>
+        </div>
 
-            <div class="row">
-                <div id="story-container" class="col-12 justify-content-center mt-3">
+        <div class="row">
+            <div id="story-container" class="col-12 justify-content-center mt-3">
 
-                    <!-- Show first  -->
-                    
-                    <div class="row">
-                        <div id="default" class="col-12 justify-content-center hide">
-                            <div id="instructions" class="col-12">
-                                <p> Follow the Hungry Caterpillar through his journey, you might end up feeling
-                                    hungry.</p>
-                                <p> Reading the book allowed, counting the food as you go...</p>
-                                <p> At the end of the story there is a game to see how much you can remember! </p>
-                                
-                            </div>
+                <!-- Show first  -->
 
-                            <div class="controls d-flex justify-content-center align-items-center">
-                                <button id="start-btn" class="s-btn mb-2">Start Story</button>
-                            </div>
+                <div class="row">
+                    <div id="default" class="col-12 justify-content-center hide">
+                        <div id="instructions" class="col-12">
+                            <p> Follow the Hungry Caterpillar through his journey, you might end up feeling
+                                hungry.</p>
+                            <p> Reading the book allowed, counting the food as you go...</p>
+                            <p> At the end of the story there is a game to see how much you can remember! </p>
+
+                        </div>
+
+                        <div class="controls d-flex justify-content-center align-items-center">
+                            <button id="start-btn" class="s-btn mb-2">Start Story</button>
                         </div>
                     </div>
-
-                    <!-- Show Second -->
-
-                    <div class="row">
-                        <div id="housing1" class="col-12 hide">
-                            <div id="story-segment" class="controls d-flex justify-content-center align-items-center hide pt-4">Plot Line
-                            </div>
-
-                            <div id="image-div" class="col-12 d-flex justify-content-center align-items-center mt-3 hide">
-                                <img src="#" id="image_id" width="100" height="100">
-                            </div>
-
-                            <div id="option-btn" class="hide d-flex justify-content-center align-items-center pt-3 m-3">
-                                <button class="op-btn" onclick="advanceStory()">Option 1</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Questions -->
-
-                    <!-- Show Third -->
-
-                    <div class="row">
-                        <div id="game-container" class="col-12 hide">
-                            <div id="questions" class="hide">
-                                <p>There are FIVE questions for you to answer, after you click the answer the buttons
-                                    will change colour to show you what anwser is correct (green) and what answers are
-                                    wrong (red). <br>
-                                    Give it a go and see how you do.
-                                </p>
-                            </div>
-
-                            <div id="answer-btn" class="hide">
-                                <button class="ans-btn">answer 1</button>
-                                <button class="ans-btn">answer 2</button>
-                                <button class="ans-btn">answer 3</button>
-                                <button class="ans-btn">answer 4</button>
-                            </div>
-
-
-                            <div class="controls">
-                                <button id="start-game" class="s-btn hide" onclick="startGame()">Start
-                                    Questions</button>
-                                <button id="next-btn" class="s-btn hide">Next Question</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Show Fourth -->
-
-                    <div class="row">
-                        <div id="housing2" class="col-12 hide">
-                            <div id="thank_you" class="hide">
-                                <p> Thank you for playing, hope you enjoyed yourself and your not to hungry!</p>
-                            </div>
-                            <div id="toStart" class="d-flex justify-content-center align-items-center hide">
-                                <button class="s-btn">Back To Story</button>
-                            </div>
-                        </div>
-                    </div>
-
-
                 </div>
+
+                <!-- Show Second -->
+
+                <div class="row">
+                    <div id="housing1" class="col-12 hide">
+                        <div id="story-segment"
+                            class="controls d-flex justify-content-center align-items-center hide pt-4">Plot Line
+                        </div>
+
+                        <div id="image-div" class="col-12 d-flex justify-content-center align-items-center mt-3 hide">
+                            <img src="#" id="image_id" width="100" height="100">
+                        </div>
+
+                        <div id="option-btn" class="hide d-flex justify-content-center align-items-center pt-3 m-3">
+                            <button class="op-btn" onclick="advanceStory()">Option 1</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Questions -->
+
+                <!-- Show Third -->
+
+                <div class="row">
+                    <div id="game-container" class="col-12 hide">
+                        <div id="questions" class="hide">
+                            <p>There are FIVE questions for you to answer, after you click the answer the buttons
+                                will change colour to show you what anwser is correct (green) and what answers are
+                                wrong (red). <br>
+                                Give it a go and see how you do.
+                            </p>
+                        </div>
+
+                        <div id="answer-btn" class="hide">
+                            <button class="ans-btn">answer 1</button>
+                            <button class="ans-btn">answer 2</button>
+                            <button class="ans-btn">answer 3</button>
+                            <button class="ans-btn">answer 4</button>
+                        </div>
+
+
+                        <div class="controls">
+                            <button id="start-game" class="s-btn hide" onclick="startGame()">Start
+                                Questions</button>
+                            <button id="next-btn" class="s-btn hide">Next Question</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Show Fourth -->
+
+                <div class="row">
+                    <div id="housing2" class="col-12 hide">
+                        <div id="thank_you" class="hide">
+                            <p> Thank you for playing, hope you enjoyed yourself and your not to hungry!</p>
+                        </div>
+                        <div id="toStart" class="d-flex justify-content-center align-items-center hide">
+                            <button class="s-btn">Back To Story</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
     </main>
 
     <!-- Scripts -->
