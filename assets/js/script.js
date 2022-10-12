@@ -10,7 +10,6 @@ const storyHouse2 = document.getElementById('housing2')
 
 let currentStoryIndex = 0;
 let selectOptions = [];
-let narrationType = 0;
 
 startButton.addEventListener('click', startStory);
 
@@ -34,15 +33,13 @@ function startStory() {
 }
 
 function advanceStory(){
-    narrationType = 0;
     if(currentStoryIndex < stories.length){
         showNarrations(stories[currentStoryIndex]);
         selectButtons[0].innerHTML = stories[currentStoryIndex].answer.option1;
-        typeText();
-        // imgSelect();
+        //typeText();
+        imgSelect();
         currentStoryIndex++; 
-    }
-    else{
+    } else{
         // have the code to program the finish
         startFiveQuestions()
     }
@@ -70,7 +67,22 @@ typeText = () => {
 
 // Images pop up on click 
 
-let imgArray = ["/assets/img/illustration/1_start", "/assets/img/illustration/1.png", "/assets/img/illustration/2.png", "/assets/img/illustration/3.png", "/assets/img/illustration/4.png", "/assets/img/illustration/5.png", "/assets/img/illustration/6.png", "/assets/img/illustration/7.png", "/assets/img/illustration/8.png", "/assets/img/illustration/9.png", "/assets/img/illustration/1.png"]
+function imgSelect() {
+  let image_element = document.getElementById('image_id')
+
+  if (selectButtons[0].innerText == "Caterpillar") {
+    image_element.src = '/assets/img/illustration/0.png'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "Ate ONE apple. But he was still hungry.") {
+    image_element.src = '/assets/img/illustration/1.png'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "Ate TWO pairs. But he was still hungry.") {
+    image_element.src = '/assets/img/illustration/2.png'
+    imageArea.classList.remove('hide')
+  } else {
+      console.log('nope')
+  }
+  }
 
 
 // Questions 
