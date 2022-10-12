@@ -3,6 +3,10 @@
 
 DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Caterpillar' is being used to demonstrate understanding of Javascript, and not for finacial gain. 
 
+# Live Project 
+
+[View live project here](https://jjbr13.github.io/Justin-Brown-milestone-project-two/)
+
 # Repository 
 
 [Locate project repository here](https://github.com/JJBR13/Justin-Brown-milestone-project-two)
@@ -165,7 +169,7 @@ The idea behind this game is to allow children to follow a story along through i
 - This project was created through GitHub: 
  1. Locating repository, clicking on the "New" button.
  2. Selecting the relevant template:  "Code-Institute-Org/gitpod-full-template" 
- 3. Adding the repository name "Justin-Brown-milestone-project-one".
+ 3. Adding the repository name "JJustin-Brown-milestone-project-two".
  4. Clicking the button "Create repository". 
 
 - Adding the Chrome extension "GitPod" created an online coding platform, enabling the use of bash terminals throughout the project. The below "git commands" were used: 
@@ -181,7 +185,7 @@ The idea behind this game is to allow children to follow a story along through i
 3. Locate the navbar at the top of the repository (Not the tope of the web page). Click the Settings tab. 
 4. Locate the NEW navigation bar on the LEFT side. Click "Pages" under the sub-heading "Code and automation". 
 5. Under "Source", click the dropdown named "None" and select "Main". 
-6. Click Save. The page will automatically refresh. With a notification at the top of the page, with the [link](**add live link HERE**) to your published site. 
+6. Click Save. The page will automatically refresh. With a notification at the top of the page, with the [link](https://jjbr13.github.io/Justin-Brown-milestone-project-two/) to your published site. 
 7. You can return to the Github pages section to access the link.
 
 ### Local Deployment 
