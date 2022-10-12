@@ -3,6 +3,8 @@
 
 DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Caterpillar' is being used to demonstrate understanding of Javascript, and not for finacial gain. 
 
+![The Hungry Caterpillar](documents/mock-ups.png)
+
 # Live Project 
 
 [View live project here](https://jjbr13.github.io/Justin-Brown-milestone-project-two/)
