@@ -138,7 +138,10 @@ The idea behind this game is to allow children to follow a story along through i
 
 ### Responsive On All Devices 
 
+- The Hungry Caterpillar was made responsive on all devices from desktop to mobile devices. 
+
 > i. Being the child, I want to be able to use it on my Ipad/ tablet phone. 
+> ii. Being the parent, I want to be able to leave my kid in control of the game.
 
 ## Feature Releases 
 
