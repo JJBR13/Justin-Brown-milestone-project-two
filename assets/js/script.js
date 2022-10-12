@@ -5,6 +5,8 @@ const narrationStoryLine = document.getElementById('story-segment')
 const instructions = document.getElementById('instructions')
 const imageArea = document.getElementById('image-div')
 const defaultStart = document.getElementById('default')
+const storyHouse = document.getElementById('housing1')
+const storyHouse2 = document.getElementById('housing2')
 
 let currentStoryIndex = 0;
 let selectOptions = [];
@@ -16,7 +18,7 @@ function onLoad() {
   defaultStart.classList.remove('hide')
 }
 
-window.onoad = onLoad();
+window.onload = onLoad();
 
 // Start game  
 
@@ -26,6 +28,7 @@ function startStory() {
   optionContainer.classList.remove('hide');
   instructions.classList.add('hide');
   answerButtons.classList.add('hide');
+  storyHouse.classList.remove('hide');
 
   advanceStory();
 }
@@ -89,8 +92,7 @@ nextButton.addEventListener('click', () => {
 
  function startFiveQuestions() {
   gameContainer.classList.remove('hide')
-  narrationStoryLine.classList.add('hide')
-  optionContainer.classList.add('hide')
+  storyHouse.classList.add('hide')
   imageArea.classList.add('hide')
   
   startQuestionButton.classList.remove('hide')
@@ -145,6 +147,7 @@ function chooseAnswer(event) {
   } else {
     // End of questions 
     gameContainer.classList.add('hide')
+    storyHouse2.classList.remove('hide')
     thankYou.classList.remove('hide')
     backButton.classList.remove('hide')
   }
@@ -169,10 +172,8 @@ function clearSetResult (i) {
 backButton.addEventListener('click', backToStart);
 
 function backToStart() {
-  //defaultStart.classList.remove('hide');
-  thankYou.classList.add('hide');
-  backButton.classList.add('hide');
   startButton.classList.remove('hide');
   instructions.classList.remove('hide');
+  storyHouse2.classList.add('hide')
   console.log(defaultStart);
 }
