@@ -36,7 +36,7 @@ function advanceStory(){
     if(currentStoryIndex < stories.length){
         showNarrations(stories[currentStoryIndex]);
         selectButtons[0].innerHTML = stories[currentStoryIndex].answer.option1;
-        //typeText();
+        typeText();
         imgSelect();
         currentStoryIndex++; 
     } else{
@@ -187,5 +187,4 @@ function backToStart() {
   startButton.classList.remove('hide');
   instructions.classList.remove('hide');
   storyHouse2.classList.add('hide')
-  console.log(defaultStart);
 }
