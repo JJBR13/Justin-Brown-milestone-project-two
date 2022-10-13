@@ -40,7 +40,7 @@ DISCLAIMER: This is a project for Code Institute, the story of 'The Hungry Cater
     
 ## Ideology
 
-The idea behind this game is to allow children to follow a story along through interection and illustrations. Both to learn, better their reading and comprehension skills. 
+The idea behind this game is to allow both children & aslym seekers to follow a story along through interection and illustrations. Both to learn, better their reading and comprehension skills. 
 
 ## User Experience 
 
@@ -132,10 +132,6 @@ The idea behind this game is to allow children to follow a story along through i
 
 > i. Being the parent, I want to have educational value. 
 
-### Type Naration Text 
-
-> i. Being a Asylum seeker, I want to be able to read the story at my own pace. 
-
 ### Responsive On All Devices 
 
 - The Hungry Caterpillar was made responsive on all devices from desktop to mobile devices. 
@@ -145,15 +141,21 @@ The idea behind this game is to allow children to follow a story along through i
 
 ## Feature Releases 
 
-### 1) Creation of animations 
+### 1) Type Naration Text 
+
+- Make typeText function type all narrations, through the story. This will then achieve user story: 
+
+> i. Being a Asylum seeker, I want to be able to read the story at my own pace. 
+
+### 2) Creation of animations 
 
 - Depending what options are are selected maybe a little animation could accompany the selection, increasing interaction for the user. 
 
-### 2) Addition of more books/ website 
+### 3) Addition of more books/ website 
 
 - Add more children stories in this format. Creating a website to house all the story games to allow multiple options. 
 
-### 3) Read the stroy out load
+### 4) Read the stroy out load
 
 - Create a text to speach reader that reads the narrations to the user. Also maybe has a control pannel that allows the user to pause the reader and select the speed in which the narration is read at. 
 
