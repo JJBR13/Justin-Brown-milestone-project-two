@@ -40,8 +40,6 @@ Tests were done site wide, all tests undertaken are show below:
 
 - This check returned no issues. 
 
-Back to [README.md](/README.md)
-
 ## Lighthouse 
 
 - Lighthouse was used towards the end of the build, this is accessed through chrome developer tools analysing the following:
@@ -94,15 +92,15 @@ The site was actively tested on my Galaxy Fold, Ipad Air & Blade 15 Razor Laptop
 
 ## Issues/ Bugs Found & Resolved
 
-**a) Making site responsive and section appear over the top of each other. 
+**a) Making site responsive and section appear over the top of each other.**
 
 - After diving into the project, it was quickly realised the basic design was not achieving desired outcome. This was when Bootstrap was introduced. Creating quick and easy resolve to issues that were created. 
 
-**b) Phone resposivity 
+**b) Phone resposivity**
 
 - When using dev tools the whole alignment was thrown to the left, this again was resolved by correct div structures through the use of unicorn and bootstrap. 
 
-**c) Back button restarting story 
+**c) Back button restarting story**
 
 - Syncing the back button to the restart the story from the start, caused me confustion and incorrect display with JavaScript functions. This was resolved by adding onClick function reload to the button within the index.html. 
 
@@ -112,8 +110,10 @@ The site was actively tested on my Galaxy Fold, Ipad Air & Blade 15 Razor Laptop
 
 ## Unresolved 
 
-**a) typeText() not progressing through the complete story narrations. 
+**a) typeText() not progressing through the complete story narrations.**
 
-**b) Removing the :hover when answers are showing whether they are correct or incorrect. 
+**b) Removing the :hover when answers are showing whether they are correct or incorrect.**
 
-**c) Last questions answers pausing to show results before progressing to thank you message. 
+**c) Last questions answers pausing to show results before progressing to thank you message.**
+
+Back to [README.md](/README.md)
