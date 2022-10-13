@@ -41,7 +41,7 @@ var stories = [
     {
       narration: "On Friday, he... ",
       answer: {
-        option1: "Ate through FIVE oranges. But was  still hungry"
+        option1: "Ate through FIVE oranges. But was still hungry."
       }
     },
     

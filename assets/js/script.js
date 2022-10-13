@@ -36,7 +36,7 @@ function advanceStory(){
     if(currentStoryIndex < stories.length){
         showNarrations(stories[currentStoryIndex]);
         selectButtons[0].innerHTML = stories[currentStoryIndex].answer.option1;
-        typeText();
+        // typeText();
         imgSelect();
         currentStoryIndex++; 
     } else{
@@ -79,8 +79,32 @@ function imgSelect() {
   } else if (selectButtons[0].innerText == "Ate TWO pairs. But he was still hungry.") {
     image_element.src = './assets/img/illustration/2.png'
     imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "Ate through THREE plums. But he was still hungry.") {
+    image_element.src = './assets/img/illustration/3.png'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "Ate FOUR strawberries. But he was still hungry.") {
+    image_element.src = './assets/img/illustration/4.png'
+    imageArea.classList.remove('hide')
+  }else if (selectButtons[0].innerText == "Ate through FIVE oranges. But was still hungry.") {
+    image_element.src = './assets/img/illustration/5.png'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "He ate through, one piece of chocolate cake, one ice cream, one pickle, one slice of swiss cheese, one slice of salami, one lolipop, one piece of cherry pie, one sausauge, one cupcake, and one slice of watermelon") {
+    image_element.src = './assets/img/illustration/6.jpg'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "The caterpillar ATE through one nice green leaf, and after that he felt much better...") {
+    image_element.src = './assets/img/illustration/7.png'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "He was a BIG, FAT caterpillar...") {
+    image_element.src = './assets/img/illustration/8.png'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "He stayed inside for more than two weeks...") {
+    image_element.src = './assets/img/illustration/9.png'
+    imageArea.classList.remove('hide')
+  } else if (selectButtons[0].innerText == "He was a BEAUTIFUL butterfly!") {
+    image_element.src = './assets/img/illustration/10.png'
+    imageArea.classList.remove('hide')
   } else {
-      console.log('nope')
+      console.log('no image')
   }
   }
 
