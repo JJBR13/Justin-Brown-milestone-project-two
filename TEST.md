@@ -4,6 +4,7 @@ Tests were done site wide, all tests undertaken are show below:
 
 ## Contents 
 
+- [Functional Testing](#functional-testing)
 - [Wave](#wave)
 - [Validator Testing](#validator-testing)
   + [HTML](#html)
@@ -16,9 +17,178 @@ Tests were done site wide, all tests undertaken are show below:
 - [Responsivity](#responsivity)
 - [Issues/ Bugs Found & Resolved](#issues-bugs-found--resolved)
 
+
+## Functional Testing 
+
+### 1. 
+
+Destcription:
+
+Ensure start button starts the story 
+
+Steps: 
+
+I. Click start button <br>
+II. Desplay narration line, image and option button 
+
+Expected: 
+
+Start button when clicked displays start of the story, related img and option button to progress.
+
+Outcome: 
+
+Start button displayed narration line, img and option buttons.
+
+<hr>
+
+### 2. 
+
+Description: 
+
+Story moves to next narrations when option button is clicked. 
+
+Steps: 
+
+I. Click option button <br>
+II. Progress to next narration line, image, option button 
+
+Expected: 
+
+Progress through the story on click. 
+
+Outcome: 
+
+Option buttons clicked and progressed through story. 
+
+<hr>
+
+### 3. 
+
+Description: 
+
+At end of story, instructions and start game button displays. 
+
+Steps: 
+
+i. Last option button is clicked <br> 
+ii. Displays game instructions and game start button
+
+Expected: 
+
+Last option button triggers game discriptions. 
+
+Outcome: 
+
+Last options tiggered game instruction and start game button. 
+
+<hr>
+
+### 4. 
+
+Description: 
+
+Start game button is clicked displays intial questions and answer options. 
+
+Steps: 
+
+i. Click Start game button <br> 
+ii. Displays first question and answer button options 
+
+Expected: 
+
+To display questions 
+
+Outcome: 
+
+Displayed questions and answer after start game button is clicked. 
+
+<hr>
+
+### 5. 
+
+Description: 
+
+When answer is clicked display correct and incorrect answer colours to button 
+
+Steps: 
+
+i. Click answer options <br>
+ii. Display correct and incorrect background colour 
+
+Expected: 
+
+Onclick shows what answers are correct and incorrect 
+
+Outcome: 
+
+Correct and incorrect backgrounf colours displayed when answer button was clicked. 
+
+<hr>
+
+### 6. 
+
+Description: 
+
+Next button to appear when answer options was clicked. 
+
+Steps: 
+
+i. Click answer option <br>
+ii. Next button is displayed
+
+Expected: 
+
+Answer option button clicked, next button appears. 
+
+Outcome: 
+
+When answer option button was clicked, next button appears. 
+
+<hr>
+
+### 7. 
+
+Description: 
+
+At end of questions thank you message and back to story button displays. 
+
+Steps: 
+
+i. When questions finish <br>
+ii. Display thank you message and button
+
+Expected: 
+
+When last question answer is clicked display message and back to story button. 
+
+Outcome: 
+
+After last question answer option button was clicked both appeared. 
+
+<hr>
+
+## 8. 
+
+Description: 
+
+Back to story button restarts stroy. 
+
+Steps: 
+
+i. Click back to story button <br> 
+ii. Returns to start story instruction. 
+
+Expected: 
+
+When button clicked to return to the start of the story. 
+
+Outcome: 
+
+On click button returns user to start story button and description. 
+
 ## Wave 
 
-[WAVE](https://wave.webaim.org/)
+[WAVE link](https://wave.webaim.org/)
 
 - This Chrome extention was used throughout the build of my webpage game to, make sure nothing was being missed along the build process. 
 
@@ -28,7 +198,7 @@ Tests were done site wide, all tests undertaken are show below:
 
 ### HTML 
 
-[W3C HTML Validator](https://validator.w3.org/)
+[W3C HTML Validator link](https://validator.w3.org/)
 
 - Intially this showed three warnings, missing of alt image tag & to remove type from script tags. All these suggestions were completed. 
 
@@ -36,7 +206,7 @@ Tests were done site wide, all tests undertaken are show below:
 
 ### CSS 
 
-[W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input+with_options)
+[W3C CSS Validator link](https://jigsaw.w3.org/css-validator/#validate_by_input+with_options)
 
 - This check returned no issues. 
 
@@ -60,6 +230,8 @@ Tests were done site wide, all tests undertaken are show below:
 ![Mobile Results](documents/test/lighthouse_mobile.png)
 
 ## Colour Contrast
+
+[A11y Color link](https://color.a11y.com/)
 
 - A11y Color validator was used to check the contrasts of colour site wide. 
 
