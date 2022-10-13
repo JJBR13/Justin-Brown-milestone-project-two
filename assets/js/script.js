@@ -52,7 +52,7 @@ function showNarrations(object) {
   narrationStoryLine.innerText = object.narration;
 }
 
-// Typing Text 
+// Typing Text - working on first narration line but not throughout.
 
 let txt = stories[0].narration; // text to type
 let textPosition = 0;
