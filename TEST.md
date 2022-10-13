@@ -186,6 +186,8 @@ Outcome:
 
 On click button returns user to start story button and description. 
 
+<hr>
+
 ## Wave 
 
 [WAVE link](https://wave.webaim.org/)
