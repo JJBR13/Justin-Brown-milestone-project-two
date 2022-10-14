@@ -1,12 +1,12 @@
-const optionContainer = document.getElementById('option-btn')
-const startButton = document.getElementById('start-btn')
-const selectButtons = optionContainer.getElementsByClassName('op-btn')
-const narrationStoryLine = document.getElementById('story-segment')
-const instructions = document.getElementById('instructions')
-const imageArea = document.getElementById('image-div')
-const defaultStart = document.getElementById('default')
-const storyHouse = document.getElementById('housing1')
-const storyHouse2 = document.getElementById('housing2')
+const optionContainer = document.getElementById('option-btn');
+const startButton = document.getElementById('start-btn');
+const selectButtons = optionContainer.getElementsByClassName('op-btn');
+const narrationStoryLine = document.getElementById('story-segment');
+const instructions = document.getElementById('instructions');
+const imageArea = document.getElementById('image-div');
+const defaultStart = document.getElementById('default');
+const storyHouse = document.getElementById('housing1');
+const storyHouse2 = document.getElementById('housing2');
 
 let currentStoryIndex = 0;
 let selectOptions = [];
@@ -14,7 +14,7 @@ let selectOptions = [];
 startButton.addEventListener('click', startStory);
 
 function onLoad() {
-  defaultStart.classList.remove('hide')
+  defaultStart.classList.remove('hide');
 }
 
 window.onload = onLoad();
@@ -41,7 +41,7 @@ function advanceStory(){
         currentStoryIndex++; 
     } else{
         // have the code to program the finish
-        startFiveQuestions()
+        startFiveQuestions();
     }
     
 }
@@ -63,146 +63,146 @@ typeText = () => {
   // incrementing position
   if (textPosition++ != txt.length)
   setTimeout(typeText, speed);
-}
+};
 
 // Images pop up on click 
 
 function imgSelect() {
-  let image_element = document.getElementById('image_id')
+  let image_element = document.getElementById('image_id');
 
   if (selectButtons[0].innerText == "Caterpillar") {
-    image_element.src = './assets/img/illustration/0.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/0.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "Ate ONE apple. But he was still hungry.") {
-    image_element.src = './assets/img/illustration/1.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/1.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "Ate TWO pairs. But he was still hungry.") {
-    image_element.src = './assets/img/illustration/2.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/2.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "Ate through THREE plums. But he was still hungry.") {
-    image_element.src = './assets/img/illustration/3.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/3.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "Ate FOUR strawberries. But he was still hungry.") {
-    image_element.src = './assets/img/illustration/4.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/4.png';
+    imageArea.classList.remove('hide');
   }else if (selectButtons[0].innerText == "Ate through FIVE oranges. But was still hungry.") {
-    image_element.src = './assets/img/illustration/5.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/5.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "He ate through, one piece of chocolate cake, one ice cream, one pickle, one slice of swiss cheese, one slice of salami, one lolipop, one piece of cherry pie, one sausauge, one cupcake, and one slice of watermelon") {
-    image_element.src = './assets/img/illustration/6.jpg'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/6.jpg';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "The caterpillar ATE through one nice green leaf, and after that he felt much better...") {
-    image_element.src = './assets/img/illustration/7.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/7.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "He was a BIG, FAT caterpillar...") {
-    image_element.src = './assets/img/illustration/8.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/8.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "He stayed inside for more than two weeks...") {
-    image_element.src = './assets/img/illustration/9.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/9.png';
+    imageArea.classList.remove('hide');
   } else if (selectButtons[0].innerText == "He was a BEAUTIFUL butterfly!") {
-    image_element.src = './assets/img/illustration/10.png'
-    imageArea.classList.remove('hide')
+    image_element.src = './assets/img/illustration/10.png';
+    imageArea.classList.remove('hide');
   } else {
-      console.log('no image')
+      console.log('no image');
   }
   }
 
 
 // Questions 
 
-const startQuestionButton = document.getElementById('start-game')
-const nextButton = document.getElementById('next-btn')
-const questionDisplay = document.getElementById('questions')
-const answerButtons = document.getElementById('answer-btn')
-const gameContainer = document.getElementById('game-container')
-const thankYou = document.getElementById('thank_you')
-const backButton = document.getElementById('toStart')
+const startQuestionButton = document.getElementById('start-game');
+const nextButton = document.getElementById('next-btn');
+const questionDisplay = document.getElementById('questions');
+const answerButtons = document.getElementById('answer-btn');
+const gameContainer = document.getElementById('game-container');
+const thankYou = document.getElementById('thank_you');
+const backButton = document.getElementById('toStart');
 
-let shuffleQuestions, currentQuestion
+let shuffleQuestions, currentQuestion;
 
 nextButton.addEventListener('click', () => {
-  currentQuestion++
-  setNextQuestion()
-})
+  currentQuestion++;
+  setNextQuestion();
+});
 
  function startFiveQuestions() {
-  gameContainer.classList.remove('hide')
-  storyHouse.classList.add('hide')
-  imageArea.classList.add('hide')
+  gameContainer.classList.remove('hide');
+  storyHouse.classList.add('hide');
+  imageArea.classList.add('hide');
   
-  startQuestionButton.classList.remove('hide')
-  questionDisplay.classList.remove('hide')
+  startQuestionButton.classList.remove('hide');
+  questionDisplay.classList.remove('hide');
 }
 
 function startGame(){
- answerButtons.classList.remove('hide')
- startQuestionButton.classList.add('hide')
- shuffleQuestions = questions.sort(() => Math.random() - .5)
+ answerButtons.classList.remove('hide');
+ startQuestionButton.classList.add('hide');
+ shuffleQuestions = questions.sort(() => Math.random() - 0.5);
  currentQuestion = 0;
- setNextQuestion()
+ setNextQuestion();
 }
 
 function setNextQuestion() {
-  orignalState()
-  showQuestion(shuffleQuestions[currentQuestion])
+  orignalState();
+  showQuestion(shuffleQuestions[currentQuestion]);
 }
 
 function showQuestion(question) {
-  questionDisplay.innerText = question.question
+  questionDisplay.innerText = question.question;
   question.answers.forEach(answer => {
-    const button = document.createElement('button')
-    button.innerText = answer.text
-    button.classList.add('ans-btn')
+    const button = document.createElement('button');
+    button.innerText = answer.text;
+    button.classList.add('ans-btn');
     if (answer.correct) {
-      button.dataset.correct = answer.correct
+      button.dataset.correct = answer.correct;
     }
-    button.addEventListener('click', chooseAnswer)
-    answerButtons.appendChild(button)
-  })
+    button.addEventListener('click', chooseAnswer);
+    answerButtons.appendChild(button);
+  });
 }
 
 function orignalState () {
-  nextButton.classList.add('hide')
+  nextButton.classList.add('hide');
 
   // Checking if there is a child within answerButtons, if not removing it. 
   while (answerButtons.firstChild) {
-    answerButtons.removeChild(answerButtons.firstChild)
+    answerButtons.removeChild(answerButtons.firstChild);
   }
 }
 
 function chooseAnswer(event) {
-  const buttonSelected = event.target
-  const correct = buttonSelected.dataset.correct
+  const buttonSelected = event.target;
+  const correct = buttonSelected.dataset.correct;
   // creating array from buttons, allowing loop
   Array.from(answerButtons.children).forEach(button => { 
-    setResult(button, button.dataset.correct)
-  })
+    setResult(button, button.dataset.correct);
+  });
   if (shuffleQuestions.length > currentQuestion + 1) {
-  nextButton.classList.remove('hide')
+  nextButton.classList.remove('hide');
   } else {
     // End of questions 
-    gameContainer.classList.add('hide')
-    storyHouse2.classList.remove('hide')
-    thankYou.classList.remove('hide')
-    backButton.classList.remove('hide')
+    gameContainer.classList.add('hide');
+    storyHouse2.classList.remove('hide');
+    thankYou.classList.remove('hide');
+    backButton.classList.remove('hide');
   }
 }
 
 function setResult (i, correct) {
-  clearSetResult(i) 
+  clearSetResult(i);
   if (correct) {
-    i.classList.add('correct')
+    i.classList.add('correct');
     //remove hover function??
   } else {
-    i.classList.add('wrong')
+    i.classList.add('wrong');
     //remove hover function??
   }
 }
 
 function clearSetResult (i) {
-    i.classList.remove('correct')
-    i.classList.remove('wrong')
+    i.classList.remove('correct');
+    i.classList.remove('wrong');
 }
 
 backButton.addEventListener('click', backToStart);
@@ -210,5 +210,5 @@ backButton.addEventListener('click', backToStart);
 function backToStart() {
   startButton.classList.remove('hide');
   instructions.classList.remove('hide');
-  storyHouse2.classList.add('hide')
+  storyHouse2.classList.add('hide');
 }
